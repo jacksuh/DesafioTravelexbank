@@ -13,20 +13,10 @@ public class CalculoIMC {
     private double peso;
     private double altura;
 
-    private double imc = peso / (altura * altura);
 
-
-
-
-    public double CalculoIMC(ImcDto dto){
+    public CalculoIMC(ImcDto dto) {
         this.peso = dto.getPeso();
         this.altura = dto.getAltura();
-
-        this.imc = dto.getPeso() / (dto.getAltura() * dto.getAltura());
-
-
-        return imc;
-
     }
 
 }
