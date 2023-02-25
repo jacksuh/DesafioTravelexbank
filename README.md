@@ -26,5 +26,6 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
     # Calculo IMC
 
     - Calculo: POST - localhost:8080/imc
+    - TesteUnitario.
 
    
