@@ -21,8 +21,9 @@ public class Gerente {
     private String nome;
 
     public String getprimeiroNome() {
-        String substring = nome.substring(0, 7).trim();
-        return substring;
+        String []list = nome.split(" ");
+        String s = list[0];
+        return s;
     }
 
 
