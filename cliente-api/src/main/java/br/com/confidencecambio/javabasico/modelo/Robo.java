@@ -15,7 +15,7 @@ import javax.validation.constraints.NotBlank;
 
 @Setter
 @NoArgsConstructor
-public class Robo {
+public class Robo  extends Pessoa{
 
     @NotBlank
     private String nome;

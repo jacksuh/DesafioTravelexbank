@@ -16,8 +16,7 @@ import javax.validation.constraints.NotBlank;
 
 @Setter
 @NoArgsConstructor
-public class Cliente {
-
+public class Cliente extends Pessoa{
     @NotBlank
     private String nome = "Jackson Silva dos santos";
 
