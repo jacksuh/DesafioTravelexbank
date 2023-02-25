@@ -28,8 +28,9 @@ public class Gerente {
 
 
     public String getUltimoNome() {
-        String substring = nome.substring(7).trim();
-        return substring;
+        String[] array = nome.split(" ");
+
+        return  array[1] + " " + array[2] + " " + array[3];
     }
 
 
@@ -40,9 +41,8 @@ public class Gerente {
     }
 
     public String getAbreviado(){
-        String abreviado = nome.substring(0, 7)+ "" + "" + " " +
-                "" + "" +  String.valueOf(nome.charAt(8) + "" + "" + nome.substring(13));
+        String[] array = nome.split(" ");
 
-        return abreviado;
+        return array[0] + " " + array[1].charAt(0) + " " + array[2] + " " + array[3];
     }
 }

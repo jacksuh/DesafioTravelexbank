@@ -19,7 +19,7 @@ import javax.validation.constraints.NotBlank;
 public class Cliente {
 
     @NotBlank
-    private String nome = "Jackson Silva dos Santos";
+    private String nome = "Miguel monteiro dos santos";
 
     public String getprimeiroNome() {
         String []list = nome.split(" ");
@@ -42,10 +42,10 @@ public class Cliente {
     }
 
     public String getAbreviado(){
-        String abreviado = nome.substring(0, 7)+ "" + "" + " " +
-                "" + "" +  String.valueOf(nome.charAt(8) + "" + "" + nome.substring(13));
+        String[] array = nome.split(" ");
 
-        return abreviado;
+        return array[0] + " " + array[1].charAt(0) + " " + array[2] + " " + array[3];
+
     }
 
 
