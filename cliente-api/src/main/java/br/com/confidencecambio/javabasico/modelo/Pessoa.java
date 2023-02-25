@@ -2,6 +2,7 @@ package br.com.confidencecambio.javabasico.modelo;
 
 public abstract class Pessoa {
 
+     private String nome;
 
     public String getPrimeiroNome() {
         return null;
