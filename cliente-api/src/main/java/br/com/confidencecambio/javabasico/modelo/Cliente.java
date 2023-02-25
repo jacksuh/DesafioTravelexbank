@@ -29,8 +29,9 @@ public class Cliente {
 
 
     public String getUltimoNome() {
-        String substring = nome.substring(7).trim();
-        return substring;
+        String[] array = nome.split(" ");
+
+        return  array[1] + " " + array[2] + " " + array[3];
     }
 
 
