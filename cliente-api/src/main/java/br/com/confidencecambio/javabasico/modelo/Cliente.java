@@ -20,7 +20,7 @@ public class Cliente extends Pessoa{
     @NotBlank
     private String nome = "Jackson Silva dos santos";
 
-    public String getprimeiroNome() {
+    public String getPrimeiroNome() {
         String []list = nome.split(" ");
         String s = list[0];
         return s;

@@ -4,22 +4,22 @@ public abstract class Pessoa {
 
      private String nome;
 
-    public String getPrimeiroNome() {
-        return null;
+    public  String getPrimeiroNome() {
+        return nome;
     }
 
 
     public String getSobreNome() {
-        return null;
+        return nome;
     }
 
 
     public String getLetrasMaiusculas(){
-        return null;
+        return nome;
     }
 
     public String getAbreviado(){
-        return null;
+        return nome;
     }
 
 }
