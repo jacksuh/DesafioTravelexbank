@@ -19,11 +19,12 @@ import javax.validation.constraints.NotBlank;
 public class Cliente {
 
     @NotBlank
-    private String nome = "Jackson Silva dos Santos";
+    private String nome = "Astrogildo Silva dos Santos";
 
     public String getprimeiroNome() {
-        String substring = nome.substring(0, 7).trim();
-        return substring;
+        String []list = nome.split(" ");
+        String s = list[0];
+        return s;
     }
 
 
