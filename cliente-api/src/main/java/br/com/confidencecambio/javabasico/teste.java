@@ -1,4 +1,6 @@
-package br.com.confidencecambio.javabasico.modelo;
+package br.com.confidencecambio.javabasico;
+
+import br.com.confidencecambio.javabasico.modelo.Cliente;
 
 public class teste {
 
