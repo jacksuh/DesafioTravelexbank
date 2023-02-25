@@ -20,7 +20,7 @@ public class Gerente extends Pessoa{
     @NotBlank
     private String nome;
 
-    public String getprimeiroNome() {
+    public String getPrimeiroNome() {
         String []list = nome.split(" ");
         String s = list[0];
         return s;
