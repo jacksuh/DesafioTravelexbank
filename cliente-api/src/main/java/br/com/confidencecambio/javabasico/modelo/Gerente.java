@@ -1,24 +1,17 @@
 package br.com.confidencecambio.javabasico.modelo;
 
-import lombok.Getter;
+
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotBlank;
 
-/**
- * Utilizado o Lombok com a anotação NotBlank que não aceitar valor branco ou nulo, possui também o metodo trim() para retirar espaço.
- * Logica criada como se fosse uma classe utilizando spring.
- * Autor: Jackson Santos
- *
- */
+
+
 
 @Setter
 @NoArgsConstructor
 public class Gerente extends Pessoa {
 
-    @NotBlank
-    private String nome;
 
     public String getPrimeiroNome() {
         String []list = nome.split(" ");

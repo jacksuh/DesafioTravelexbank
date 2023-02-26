@@ -1,8 +1,17 @@
 package br.com.confidencecambio.javabasico.modelo;
 
+import javax.validation.constraints.NotBlank;
+
+
+
 public abstract class Pessoa {
 
-     private String nome;
+    @NotBlank
+     protected String nome;
+
+    public void setNome(String nome) {
+        this.nome = nome.trim();
+    }
 
     public  String getPrimeiroNome() {
         return nome;
