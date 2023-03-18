@@ -1,6 +1,8 @@
 package br.com.confidencecambio.javabasico.modelo;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.util.Arrays;
+import java.util.List;
 
 @Setter
 @NoArgsConstructor
@@ -25,9 +27,13 @@ public class Cliente extends Pessoa {
     }
 
     public String getAbreviado() {
-        String[] list = nome.split(" ", 2);
+        String[] list = nome.split(" ", 3);
 
-        return list[0] + " " + list[1].charAt(0);
+        if(list.length <= 2){
+            return list[0] + " " + list[1].toUpperCase().charAt(0);
+        }else{
+            return list[0] + " " + list[1].charAt(0) + " " + list[2];
+        }
 
     }
 
