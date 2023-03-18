@@ -32,7 +32,7 @@ public class Cliente extends Pessoa {
         if(list.length <= 2){
             return list[0] + " " + list[1].toUpperCase().charAt(0);
         }else{
-            return list[0] + " " + list[1].charAt(0) + " " + list[2];
+            return list[0] + " " + list[1].toUpperCase().charAt(0) + " " + list[2];
         }
 
     }

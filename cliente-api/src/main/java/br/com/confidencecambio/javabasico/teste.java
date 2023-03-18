@@ -11,7 +11,7 @@ public class teste {
 
         Cliente c = new Cliente();
 
-        c.setNome("Joao gomes");
+        c.setNome("Joao gomes da silva");
 
         System.out.println(c.getPrimeiroNome());
         System.out.println(c.getSobreNome());

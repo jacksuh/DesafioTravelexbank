@@ -10,28 +10,31 @@ import lombok.Setter;
 public class Robo  extends Pessoa{
 
     public String getPrimeiroNome() {
-        String []list = nome.split(" ");
-        String s = list[0];
-        return s;
+        String[] list = nome.split(" ");
+        return list[0];
     }
-
 
     public String getSobreNome() {
-        String[] array = nome.split(" ");
+        String[] list = nome.split(" ",2);
 
-        return  array[1] + " " + array[2] + " " + array[3];
+        return list[1];
     }
 
 
-    public String getLetrasMaiusculas(){
+    public String getLetrasMaiusculas() {
         String maiuscula = nome.toUpperCase();
 
         return maiuscula;
     }
 
-    public String getAbreviado(){
-        String[] array = nome.split(" ");
+    public String getAbreviado() {
+        String[] list = nome.split(" ", 3);
 
-        return array[0] + " " + array[1].charAt(0) + " " + array[2] + " " + array[3];
+        if(list.length <= 2){
+            return list[0] + " " + list[1].toUpperCase().charAt(0);
+        }else{
+            return list[0] + " " + list[1].toUpperCase().charAt(0) + " " + list[2];
+        }
+
     }
 }
