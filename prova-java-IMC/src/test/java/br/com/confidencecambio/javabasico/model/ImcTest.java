@@ -16,12 +16,12 @@ public class ImcTest {
 
     @Test
     public void testeCalcular(){
-        ImcDto c = new ImcDto();
+        CalculoIMC c = new CalculoIMC();
 
         c.setPeso(93);
         c.setAltura(1.78);
 
-        service.CalculoIMC(c);
+        service.calculoIMC(c);
 
         Assert.assertEquals(29, 29);
 

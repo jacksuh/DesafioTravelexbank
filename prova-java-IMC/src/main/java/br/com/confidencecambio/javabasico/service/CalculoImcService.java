@@ -1,7 +1,6 @@
 package br.com.confidencecambio.javabasico.service;
 
 
-import br.com.confidencecambio.javabasico.dto.ImcDto;
 import br.com.confidencecambio.javabasico.model.CalculoIMC;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +10,7 @@ import java.text.DecimalFormat;
 @Service
 public class CalculoImcService {
 
-    public String CalculoIMC(ImcDto dto) {
-        CalculoIMC c = new CalculoIMC();
-        c.setPeso(dto.getPeso());
-        c.setAltura(dto.getAltura());
+    public String calculoIMC(CalculoIMC c) {
 
         double v = c.getPeso() / (c.getAltura() * c.getAltura());
 
